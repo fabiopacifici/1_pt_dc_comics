@@ -1,3 +1,4 @@
+/* #region Common */
 :root
 {
   --dc-dark: #1D1C1D;
@@ -29,8 +30,9 @@ a
 {
   text-decoration: none;
 }
+/* #endregion Common */
 
-
+/* #region Layout */
 .container
 {
   width: 100%;
@@ -52,10 +54,7 @@ a
   width: 100%;
 }
 
-.list-unstyled
-{
-  list-style: none;
-}
+
 
 /* Media Query */
 
@@ -82,9 +81,9 @@ a
     max-width: 720px;
   }
 
-  .col-md-6
+  .col-md-4
   {
-    width: 50%;
+    width: calc(100% / 12 * 4);
   }
 
 }
@@ -93,11 +92,21 @@ a
 {
   .container
   {
-    max-width: 920px;
+    max-width: 1200px;
   }
 
-  .col-lg-4
+  .col-lg-2
   {
-    width: calc(100% / 12 * 4);
+    width: calc(100% / 12 * 2);
   }
+}
+
+/* #endregion Layout */
+
+
+/* Utilities */
+
+.list-unstyled
+{
+  list-style: none;
 }
