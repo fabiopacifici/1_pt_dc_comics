@@ -1,9 +1,19 @@
 <script>
 import AppJumbotron from './AppJumbotron.vue';
+import ComicsList from './ComicsList.vue';
+import DcBanner from './DcBanner.vue';
+
 export default {
   name: 'AppMain',
   components: {
-    AppJumbotron
+    AppJumbotron,
+    ComicsList,
+    DcBanner
+  },
+  data() {
+    return {
+
+    }
   }
 
 
@@ -13,13 +23,11 @@ export default {
   <main>
 
     <AppJumbotron></AppJumbotron>
-    <!-- Comics section -->
-
-
-    <!-- Banner -->
+    <ComicsList></ComicsList>
+    <DcBanner></DcBanner>
 
   </main>
 </template>
-<style>
+<style scoped>
 
 </style>
