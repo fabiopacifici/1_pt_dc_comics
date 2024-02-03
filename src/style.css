@@ -54,6 +54,12 @@ a
   width: 100%;
 }
 
+.col {
+  width: auto;
+  flex-basis: auto;
+  padding:1rem;
+}
+
 
 
 /* Media Query */
